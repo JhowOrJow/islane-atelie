@@ -17,15 +17,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Bibliotecas (CDN): Swiper, AOS, GLightbox, Font Awesome -->
+  <!-- Bibliotecas (CDN): Swiper, AOS, GLightbox, Flatpickr, Font Awesome -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/mobile.css?v=2" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
 </head>
 <body>
 
@@ -72,7 +71,7 @@
         </div>
         <div class="hero__visual" data-aos="zoom-in" data-aos-delay="150">
           <div class="arch">
-            <img src="assets/img/maos-nude.webp" alt="Mãos com manicure nude e brilho" />
+            <img src="assets/img/hero.webp" alt="Unhas vermelhas feitas pela Islane" />
           </div>
           <div class="float float--a"><i class="fa-solid fa-heart"></i> Cuidado em cada detalhe!</div>
           <div class="float float--b"><i class="fa-regular fa-calendar-check"></i> Agende seu horário</div>
@@ -115,7 +114,7 @@
             <i class="fa-solid fa-gift"></i>
             <span>Mão + pé juntos viram <strong>Combo por R$ 50</strong>. Já aplicamos o desconto pra você!</span>
           </div>
-          <img class="quote__img" src="assets/img/flatlay.webp" alt="Mesa com esmaltes, alicates e lírios laranja" loading="lazy" />
+          <img class="quote__img" src="assets/img/antes-depois.webp" alt="Antes e depois de mãos cuidadas pela Islane" loading="lazy" />
         </div>
 
         <form class="quote__card" id="quoteForm" data-aos="fade-left" autocomplete="off">
@@ -153,15 +152,15 @@
       <div class="container">
         <header class="section__head" data-aos="fade-up">
           <span class="eyebrow">Galeria</span>
-          <h2>Inspirações de <em>beleza e cuidado</em></h2>
-          <p>Toque nas imagens para ampliar.</p>
+          <h2>Resultados <em>reais</em> da Islane</h2>
+          <p>Fotos de atendimentos. Toque nas imagens para ampliar.</p>
         </header>
 
         <div class="chips" id="galleryFilters" role="tablist" aria-label="Filtrar galeria">
           <button class="chip is-active" data-filter="all">Todas</button>
           <button class="chip" data-filter="maos">Mãos</button>
           <button class="chip" data-filter="pes">Pés</button>
-          <button class="chip" data-filter="ambiente">Ateliê</button>
+          <button class="chip" data-filter="antesdepois">Antes e depois</button>
         </div>
 
         <div class="gallery" id="gallery"><!-- gerado por js/main.js --></div>
@@ -265,7 +264,7 @@
   <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/l10n/pt.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/data.js?v=3"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>

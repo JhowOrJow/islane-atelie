@@ -29,6 +29,7 @@ window.SITE = {
 
   /* ---------- CATÁLOGO ----------
      preco: número (30) ou null para "Sob consulta"
+     pos: posição da foto no card (CSS object-position)
      Para adicionar um serviço, copie um bloco e mude os dados. */
   servicos: [
     {
@@ -37,7 +38,8 @@ window.SITE = {
       subtitulo: "Somente mão",
       descricao: "Cuidado completo para as suas mãos, com acabamento impecável e esmaltação.",
       preco: 30,
-      img: "assets/img/maos-nude.webp",
+      img: "assets/img/g-nude.webp",
+      pos: "center 40%",
       icone: "fa-regular fa-hand",
       tag: "Mãos"
     },
@@ -47,7 +49,8 @@ window.SITE = {
       subtitulo: "Somente pé",
       descricao: "Pés cuidados, macios e com esmaltação linda para qualquer ocasião.",
       preco: 30,
-      img: "assets/img/pes-coral.webp",
+      img: "assets/img/card-pedicure.webp",
+      pos: "center 60%",
       icone: "fa-solid fa-shoe-prints",
       tag: "Pés"
     },
@@ -57,7 +60,8 @@ window.SITE = {
       subtitulo: "Manicure e Pedicure",
       descricao: "O atendimento completo: mãos e pés no mesmo horário, com preço especial.",
       preco: 50,
-      img: "assets/img/caramelo.webp",
+      img: "assets/img/card-combo.webp",
+      pos: "center",
       icone: "fa-solid fa-heart",
       tag: "Mais pedido",
       destaque: true
@@ -68,20 +72,24 @@ window.SITE = {
       subtitulo: "Personalizados",
       descricao: "Quer algo diferente ou tem dúvidas? Fale com a Islane e peça seu orçamento.",
       preco: null,
-      img: "assets/img/french-lirio.webp",
+      img: "assets/img/g-detalhe.webp",
+      pos: "center 30%",
       icone: "fa-solid fa-wand-magic-sparkles",
       tag: "Sob consulta"
     }
   ],
 
   /* ---------- GALERIA ----------
-     cat: maos | pes | ambiente */
+     cat: pode ter várias categorias separadas por espaço: maos | pes | antesdepois */
   galeria: [
-    { src: "assets/img/maos-nude.webp",    cat: "maos",     titulo: "Nude brilhante" },
-    { src: "assets/img/pes-coral.webp",    cat: "pes",      titulo: "Pedicure coral" },
-    { src: "assets/img/flatlay.webp",      cat: "ambiente", titulo: "Ateliê Islane Veloso" },
-    { src: "assets/img/french-lirio.webp", cat: "maos",     titulo: "Francesinha delicada" },
-    { src: "assets/img/pes-vinho.webp",    cat: "pes",      titulo: "Pedicure vinho" },
-    { src: "assets/img/caramelo.webp",     cat: "ambiente", titulo: "Caramelo com dourado" }
+    { src: "assets/img/g-nude.webp",           cat: "maos",              titulo: "Unhas nude" },
+    { src: "assets/img/g-vermelho.webp",       cat: "maos",              titulo: "Vermelho clássico" },
+    { src: "assets/img/g-pe-frances.webp",     cat: "pes antesdepois",   titulo: "Francesinha nos pés - depois" },
+    { src: "assets/img/g-detalhe.webp",        cat: "maos",              titulo: "Nude com detalhe" },
+    { src: "assets/img/g-depois-vermelho.webp",cat: "maos antesdepois",  titulo: "Vermelho - depois" },
+    { src: "assets/img/g-pe-antes.webp",       cat: "pes antesdepois",   titulo: "Pés - antes" },
+    { src: "assets/img/g-mao-antes.webp",      cat: "maos antesdepois",  titulo: "Mãos - antes" },
+    { src: "assets/img/g-mao-durante.webp",    cat: "maos antesdepois",  titulo: "Mãos - durante" },
+    { src: "assets/img/g-pe-durante.webp",     cat: "pes antesdepois",   titulo: "Pés - durante" }
   ]
 };

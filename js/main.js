@@ -49,7 +49,7 @@
     return (
       '<div class="swiper-slide">' +
       '<article class="card' + (s.destaque ? " card--hot" : "") + '">' +
-      '<div class="card__media"><img src="' + s.img + '" alt="' + esc(s.nome) + '" loading="lazy" />' +
+      '<div class="card__media"><img src="' + s.img + '" alt="' + esc(s.nome) + '" loading="lazy" style="object-position:' + (s.pos || "center") + '" />' +
       '<span class="card__tag">' + esc(s.tag) + "</span></div>" +
       '<div class="card__body">' +
       '<div class="card__icon"><i class="' + s.icone + '"></i></div>' +
@@ -67,8 +67,8 @@
   new Swiper(".catalog", {
     slidesPerView: 1.15,
     spaceBetween: 18,
-    centeredSlides: false,
     grabCursor: true,
+    watchOverflow: true,
     pagination: { el: ".catalog .swiper-pagination", clickable: true },
     navigation: { nextEl: ".catalog .swiper-button-next", prevEl: ".catalog .swiper-button-prev" },
     breakpoints: {
@@ -158,7 +158,9 @@
       alert("Escolha ao menos um serviço para montar o orçamento 💛");
       return;
     }
-    var nome = $("#qName").value.trim(), quando = whenPicker ? whenPicker.altInput.value.trim() : $("#qWhen").value.trim(), obs = $("#qNotes").value.trim();
+    var nome = $("#qName").value.trim(),
+        quando = whenPicker ? whenPicker.altInput.value.trim() : $("#qWhen").value.trim(),
+        obs = $("#qNotes").value.trim();
     var msg = "Olá, Islane! Vim pelo seu site e gostaria de solicitar:\n\n";
     r.lines.forEach(function (l) { msg += "• " + l.q + "x " + l.nome + " (" + brl(l.un) + ")\n"; });
     msg += "\nTotal estimado: " + brl(r.total);
@@ -188,7 +190,7 @@
     $$(".chip").forEach(function (c) { c.classList.toggle("is-active", c === b); });
     var f = b.dataset.filter;
     $$(".gitem").forEach(function (it) {
-      var show = f === "all" || it.dataset.cat === f;
+      var show = f === "all" || it.dataset.cat.split(" ").indexOf(f) !== -1;
       it.classList.toggle("is-hidden", !show);
       // GLightbox só deve navegar pelos itens visíveis
       it.classList.toggle("glightbox", show);
