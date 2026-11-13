@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Islane Veloso • Ateliê de Estética | Manicure e Pedicure em Diadema</title>
+  <meta name="description" content="Ateliê de estética Islane Veloso: manicure e pedicure com cuidado em cada detalhe. Peça seu orçamento e agende seu horário pelo WhatsApp. Diadema - SP." />
+  <meta name="theme-color" content="#7a1f2b" />
+  <meta property="og:title" content="Islane Veloso • Manicure e Pedicure" />
+  <meta property="og:description" content="Cuidado, beleza e autoestima para você! Agende seu horário pelo WhatsApp." />
+  <meta property="og:image" content="assets/img/banner-islane.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bibliotecas (CDN): Swiper, AOS, GLightbox, Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="Islane Veloso - início">
+        <span class="brand__script">Islane Veloso</span>
+        <span class="brand__sub">Manicure e Pedicure</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#orcamento">Orçamento</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#precos">Preços</a>
+        <a href="#contato">Contato</a>
+        <a href="#" class="btn btn--sm btn--whats js-whats nav__cta"><i class="fa-brands fa-whatsapp"></i> Agendar</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <div class="blob blob--1"></div><div class="blob blob--2"></div>
+      <div class="container hero__inner">
+        <div class="hero__text" data-aos="fade-right">
+          <span class="eyebrow"><i class="fa-solid fa-crown"></i> Ateliê de Estética</span>
+          <h1>
+            <span class="script">Islane Veloso</span>
+            <span class="serif">Manicure &amp; Pedicure</span>
+          </h1>
+          <p class="lead">Cuidado, beleza e autoestima para você. Um momento só seu, com atenção em cada detalhe.</p>
+          <div class="hero__cta">
+            <a href="#" class="btn btn--whats js-whats"><i class="fa-brands fa-whatsapp"></i> Solicitar orçamento</a>
+            <a href="#catalogo" class="btn btn--ghost">Ver catálogo</a>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>R$ 30</strong><span>Manicure ou Pedicure</span></li>
+            <li><strong>R$ 50</strong><span>Combo mão + pé</span></li>
+            <li><strong>Diadema</strong><span>Casa Grande - SP</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual" data-aos="zoom-in" data-aos-delay="150">
+          <div class="arch">
+            <img src="assets/img/maos-nude.webp" alt="Mãos com manicure nude e brilho" />
+          </div>
+          <div class="float float--a"><i class="fa-solid fa-heart"></i> Cuidado em cada detalhe!</div>
+          <div class="float float--b"><i class="fa-regular fa-calendar-check"></i> Agende seu horário</div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Beleza ✦ Cuidado ✦ Autoestima ✦ Manicure ✦ Pedicure ✦ Beleza ✦ Cuidado ✦ Autoestima ✦ Manicure ✦ Pedicure ✦ </span>
+          <span>Beleza ✦ Cuidado ✦ Autoestima ✦ Manicure ✦ Pedicure ✦ Beleza ✦ Cuidado ✦ Autoestima ✦ Manicure ✦ Pedicure ✦ </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CATÁLOGO (Swiper) ===== -->
+    <section class="section" id="catalogo">
+      <div class="container">
+        <header class="section__head" data-aos="fade-up">
+          <span class="eyebrow">Catálogo de serviços</span>
+          <h2>Escolha o seu <em>momento de cuidado</em></h2>
+          <p>Deslize, escolha e peça seu orçamento direto pelo WhatsApp.</p>
+        </header>
+
+        <div class="swiper catalog" data-aos="fade-up">
+          <div class="swiper-wrapper" id="catalogList"><!-- gerado por js/main.js --></div>
+          <div class="swiper-pagination"></div>
+          <button class="swiper-button-prev" aria-label="Anterior"></button>
+          <button class="swiper-button-next" aria-label="Próximo"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ORÇAMENTO ===== -->
+    <section class="section section--tint" id="orcamento">
+      <div class="container quote">
+        <div class="quote__intro" data-aos="fade-right">
+          <span class="eyebrow">Orçamento rápido</span>
+          <h2>Monte seu <em>atendimento</em></h2>
+          <p>Escolha os serviços, informe seu nome e a data de preferência. Sua mensagem já vai pronta para o WhatsApp da Islane.</p>
+          <div class="combo-tip" id="comboTip" hidden>
+            <i class="fa-solid fa-gift"></i>
+            <span>Mão + pé juntos viram <strong>Combo por R$ 50</strong>. Já aplicamos o desconto pra você!</span>
+          </div>
+          <img class="quote__img" src="assets/img/flatlay.webp" alt="Mesa com esmaltes, alicates e lírios laranja" loading="lazy" />
+        </div>
+
+        <form class="quote__card" id="quoteForm" data-aos="fade-left" autocomplete="off">
+          <h3>Serviços</h3>
+          <div class="quote__items" id="quoteItems"><!-- gerado por js/main.js --></div>
+
+          <div class="quote__total">
+            <span>Total estimado</span>
+            <strong id="quoteTotal">R$ 0,00</strong>
+          </div>
+
+          <div class="field-row">
+            <label class="field">
+              <span>Seu nome</span>
+              <input type="text" id="qName" placeholder="Como posso te chamar?" />
+            </label>
+            <label class="field">
+              <span><i class="fa-regular fa-calendar"></i> Data / horário de preferência</span>
+              <input type="text" id="qWhen" placeholder="Escolha data e horário" readonly />
+            </label>
+          </div>
+          <label class="field">
+            <span>Observações (opcional)</span>
+            <textarea id="qNotes" rows="2" placeholder="Cor de esmalte, ideias, dúvidas..."></textarea>
+          </label>
+
+          <button type="submit" class="btn btn--whats btn--block"><i class="fa-brands fa-whatsapp"></i> Enviar pedido pelo WhatsApp</button>
+          <small class="muted">Valores conforme a tabela da Islane. Confirmação final feita no atendimento.</small>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== GALERIA (GLightbox) ===== -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <header class="section__head" data-aos="fade-up">
+          <span class="eyebrow">Galeria</span>
+          <h2>Inspirações de <em>beleza e cuidado</em></h2>
+          <p>Toque nas imagens para ampliar.</p>
+        </header>
+
+        <div class="chips" id="galleryFilters" role="tablist" aria-label="Filtrar galeria">
+          <button class="chip is-active" data-filter="all">Todas</button>
+          <button class="chip" data-filter="maos">Mãos</button>
+          <button class="chip" data-filter="pes">Pés</button>
+          <button class="chip" data-filter="ambiente">Ateliê</button>
+        </div>
+
+        <div class="gallery" id="gallery"><!-- gerado por js/main.js --></div>
+      </div>
+    </section>
+
+    <!-- ===== PREÇOS ===== -->
+    <section class="section section--dark" id="precos">
+      <div class="container prices">
+        <div class="prices__text" data-aos="fade-right">
+          <span class="eyebrow eyebrow--light">Tabela de preços</span>
+          <h2>Simples, <em>transparente</em> e com carinho</h2>
+          <ul class="price-list">
+            <li><span><i class="fa-regular fa-hand"></i> Somente mão</span><b>R$ 30,00</b></li>
+            <li><span><i class="fa-solid fa-shoe-prints"></i> Somente pé</span><b>R$ 30,00</b></li>
+            <li class="is-best"><span><i class="fa-solid fa-heart"></i> Mão + pé (combo)</span><b>R$ 50,00</b></li>
+          </ul>
+          <p class="thanks">Agradeço a todos pela confiança e por fazer parte dessa caminhada. <span class="script">Islane Veloso</span></p>
+          <a href="#" class="btn btn--whats js-whats"><i class="fa-brands fa-whatsapp"></i> Quero agendar</a>
+        </div>
+        <div class="prices__imgs" data-aos="fade-left">
+          <a href="assets/img/tabela-precos.jpg" class="glightbox flyer flyer--a" data-gallery="flyers" data-title="Tabela de preços">
+            <img src="assets/img/tabela-precos.jpg" alt="Tabela de preços de manicure e pedicure" loading="lazy" />
+          </a>
+          <a href="assets/img/banner-islane.jpg" class="glightbox flyer flyer--b" data-gallery="flyers" data-title="Islane Veloso - Manicure e Pedicure">
+            <img src="assets/img/banner-islane.jpg" alt="Banner Islane Veloso Manicure e Pedicure" loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMO AGENDAR ===== -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head" data-aos="fade-up">
+          <span class="eyebrow">Como funciona</span>
+          <h2>Agendar é <em>fácil</em></h2>
+        </header>
+        <div class="steps">
+          <article class="step" data-aos="fade-up"><span class="step__n">1</span><i class="fa-solid fa-hand-pointer"></i><h3>Escolha</h3><p>Veja o catálogo e selecione o serviço que você quer.</p></article>
+          <article class="step" data-aos="fade-up" data-aos-delay="100"><span class="step__n">2</span><i class="fa-brands fa-whatsapp"></i><h3>Fale com a Islane</h3><p>Envie o pedido pelo WhatsApp e combine data e horário.</p></article>
+          <article class="step" data-aos="fade-up" data-aos-delay="200"><span class="step__n">3</span><i class="fa-solid fa-spa"></i><h3>Relaxe</h3><p>Chegue e aproveite um atendimento com cuidado em cada detalhe.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section section--tint" id="contato">
+      <div class="container contact">
+        <div class="contact__card" data-aos="fade-right">
+          <span class="eyebrow">Contato</span>
+          <h2>Vamos <em>conversar?</em></h2>
+          <ul class="contact__list">
+            <li><i class="fa-brands fa-whatsapp"></i><div><small>WhatsApp</small><a href="#" class="js-whats js-whats-text">(11) 94464-3877</a></div></li>
+            <li><i class="fa-solid fa-phone"></i><div><small>Telefone</small><a href="tel:+5511964263221">(11) 96426-3221</a></div></li>
+            <li><i class="fa-brands fa-instagram"></i><div><small>Instagram</small><a href="https://instagram.com/islaneveloso43" target="_blank" rel="noopener">@islaneveloso43</a></div></li>
+            <li><i class="fa-solid fa-location-dot"></i><div><small>Endereço</small><span>Rua Chopin, 229 - Casa Grande<br />Diadema - SP</span></div></li>
+          </ul>
+          <a href="#" class="btn btn--whats js-whats"><i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp</a>
+        </div>
+        <div class="contact__map" data-aos="fade-left">
+          <iframe title="Mapa: Rua Chopin, 229 - Diadema" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Rua+Chopin+229+Diadema+SP&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <span class="brand__script">Islane Veloso</span>
+        <p>Manicure e Pedicure • Beleza, cuidado e autoestima.</p>
+      </div>
+      <div class="footer__social">
+        <a href="#" class="js-whats" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com/islaneveloso43" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="tel:+5511964263221" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> Islane Veloso • Feito com <i class="fa-solid fa-heart"></i></p>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="#" class="fab js-whats" aria-label="Falar no WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <!-- Mensagem de aniversário (desative em js/data.js) -->
+  <div class="bday" id="bday" hidden>
+    <div class="bday__box" role="dialog" aria-modal="true" aria-labelledby="bdayTitle">
+      <button class="bday__close" id="bdayClose" aria-label="Fechar">&times;</button>
+      <div class="bday__emoji">🎂🌷</div>
+      <h2 id="bdayTitle" class="script">Feliz aniversário, Islane!</h2>
+      <p id="bdayMsg"></p>
+      <button class="btn btn--whats" id="bdayOk">Ver meu ateliê ✨</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/l10n/pt.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
