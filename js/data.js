@@ -22,7 +22,7 @@ window.SITE = {
 
   // Mensagem de aniversário (aparece 1x por visita). Troque para false quando o site for pro ar.
   aniversario: {
-    ativo: False,
+    ativo: false,
     texto:
       "Este site é um presente para o seu novo ateliê. Que cada cliente saia daqui com as unhas lindas e a autoestima lá no alto. Você merece todo o sucesso do mundo! Com muito carinho, Jonathan 💛"
   },
